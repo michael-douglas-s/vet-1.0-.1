@@ -1,0 +1,27 @@
+@media (min-width: 500px) {
+  .container-vet {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+
+  .perfil-vet {
+    border-radius: 3rem 0 3rem 3rem;
+  }
+
+  .dados-client {
+    border-radius: 0 3rem 3rem 0;
+  }
+
+  .container-btn {
+    flex-direction: row;
+  }
+  .btn-dados {
+    padding: 1rem 1rem;
+    font-size: 2rem;
+  }
+
+  .input-personalizado {
+    padding: 1.2rem;
+  }
+}

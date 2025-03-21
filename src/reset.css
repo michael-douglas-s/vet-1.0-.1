@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.contact-btn, .localizacao{
+  text-decoration: none;
+  color: rgba(255, 250, 250, 0.897);
+  font-weight: 800;
+}
+
+html, body {
+  overflow-x: hidden;
+}

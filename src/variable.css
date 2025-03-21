@@ -1,0 +1,13 @@
+:root {
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --dark-gray-blue-rgb: 30, 40, 50;
+
+  /* Gradients VETY */
+
+  --background-color: #8ec5fc;
+  --background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  margin: 0;
+}
+
+.container-vet {
+  width: 95vw;
+  max-width: 65rem;
+  height: 100vh;
+  border-radius: 3rem;
+  margin: 2rem;
+  background: var(--background-image);
+}
+
+.perfil-vet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-image);
+  border-radius: 3rem 3rem 0 0;
+  padding: 3rem;
+}
+
+.profile-picture {
+  background-image: url(./images/300x300.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 17rem;
+  aspect-ratio: 1/1;
+  margin-top: 2rem;
+}
+
+.perfil-vet .title-vet {
+  margin-top: 1rem;
+  color: rgba(255, 250, 250, 0.897);
+  font-size: 3.5rem;
+}
+
+.perfil-vet .name-vet {
+  color: rgba(255, 250, 250, 0.897);
+  font-size: 2.3rem;
+}
+
+.container-btn {
+  display: flex;
+
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-btn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: var(--light-lavender);
+  border-radius: 2rem;
+}
+
+.container-localizacao {
+  margin: 1rem 2rem;
+  width: 100%;
+
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: var(--light-lavender);
+  border-radius: 2rem;
+  font-weight: 700;
+}
+
+.dados-client {
+  background: var(--background-image);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 0 0 3rem 3rem;
+  padding: 2rem;
+}
+
+.title-dados {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: rgba(255, 250, 250, 0.897);
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+#appointment-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-top: 2.3rem;
+}
+
+.input-personalizado {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.input-personalizado:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+}
+
+.btn-dados {
+  padding: 1rem 2rem;
+  background-color: var(--light-lavender);
+  border-radius: 2rem;
+  border: none;
+  font-weight: 700;
+  color: rgb(100, 76, 122);
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 1s;
+  width: 100%;
+  font-size: 2.3rem;
+}
+
+.btn-dados:hover {
+  transform: scale(1.1);
+}
+
+input[type="date"],
+input[type="time"] {
+  width: 100%; /* Para ocupar toda a largura disponível */
+  min-width: 12rem; /* Evita que fique pequeno demais */
+  padding: 1.5rem; /* Aumenta o espaço interno */
+  font-size: 1.6rem; /* Ajusta o tamanho da fonte */
+  border-radius: 1rem;
+  border: none;
+}
+
+
+/* Estilo geral do campo de horário */
+.input-personalizado {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  
+  transition: all 0.3s ease;
+}
+
+/* Quando o campo está em foco (clicado) */
+.input-personalizado:focus {
+  border-color: #5c6bc0;
+  outline: none;
+  box-shadow: 0 0 10px rgba(92, 107, 192, 0.5);
+}
+
+/* Para o caso de placeholder */
+.input-personalizado::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Estilo para o input de horário */
+#appointment-time {
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+ ;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+/* Estilo para quando o campo de horário estiver focado */
+#appointment-time:focus {
+  border-color:var(  --background-color);
+ 
+}
