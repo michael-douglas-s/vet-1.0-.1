@@ -105,3 +105,46 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para preencher as opções no início
     atualizarHorariosDisponiveis();
   });
+
+  document.getElementById("appointment-time").addEventListener("change", function() {
+    const appointmentTime = this.value;
+  
+    // Verificar se o horário já está ocupado
+    checkIfTimeAvailable(appointmentTime);
+  });
+  
+  function checkIfTimeAvailable(time) {
+    // Enviar a verificação do horário para o servidor
+    fetch('/check-time', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ appointmentTime: time })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.available) {
+        // Se o horário estiver disponível, permita a seleção
+        selectTime(time);
+      } else {
+        // Caso contrário, mostre uma mensagem de erro
+        alert('Este horário já foi ocupado!');
+      }
+    });
+  }
+  
+  function selectTime(time) {
+    // Enviar o horário selecionado para o servidor e bloquear para os outros usuários
+    fetch('/select-time', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ appointmentTime: time })
+    });
+  
+    // Atualizar UI
+    alert(`Horário ${time} reservado com sucesso!`);
+  }
+  
