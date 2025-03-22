@@ -78,12 +78,19 @@ body {
 .container-localizacao {
   margin: 1rem 2rem;
   width: 100%;
-
   text-align: center;
-  padding: 1rem 2rem;
   background-color: var(--light-lavender);
   border-radius: 2rem;
   font-weight: 700;
+}
+.container-localizacao a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Faz o link ocupar toda a largura do contêiner */
+  padding: 1rem 2rem; /* Aumenta a área clicável */
+  text-decoration: none; /* Remove o sublinhado padrão */
 }
 
 .dados-client {
@@ -152,7 +159,6 @@ input[type="time"] {
   border: none;
 }
 
-
 /* Estilo geral do campo de horário */
 .input-personalizado {
   background-color: #f8f8f8;
@@ -162,7 +168,7 @@ input[type="time"] {
   padding: 12px 15px;
   width: 100%;
   box-sizing: border-box;
-  
+
   transition: all 0.3s ease;
 }
 
@@ -186,13 +192,11 @@ input[type="time"] {
   font-family: Arial, sans-serif;
   background-color: #fff;
   border-radius: 8px;
- ;
   border: 2px solid #ddd;
   transition: all 0.3s ease;
 }
 
 /* Estilo para quando o campo de horário estiver focado */
 #appointment-time:focus {
-  border-color:var(  --background-color);
- 
+  border-color: var(--background-color);
 }
