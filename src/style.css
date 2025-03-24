@@ -201,18 +201,32 @@ input[type="time"] {
   border-color: var(--background-color);
 }
 
-.input-wrapper input,
-.input-wrapper select {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  padding: 12px 15px;
+.input-personalizado {
   width: 100%;
-  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  color: black;
+  background-color: white;
 }
 
-.input-personalizado {
+input[type="date"]::-webkit-datetime-edit {
+  color: transparent;
+}
+
+/* Criando o efeito de placeholder com o texto 'Data' */
+.input-personalizado::before {
+  content: "Data:";
+  color: var(   --dark-gray-blue);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Para que o texto não interfira na interação do input */
   font-size: 16px;
-  color: #333;
+  font-weight: 700;
+}
+
+.input-personalizado:focus::before {
+  content: ""; /* Remove o texto "Data" quando o input for focado */
 }
