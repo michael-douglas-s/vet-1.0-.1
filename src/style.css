@@ -131,17 +131,6 @@ body {
   background-color: rgba(211, 211, 211, 0.7);
 }
 
-.input-date[type="date"] {
-  width: 100%; /* Garante que ocupe toda a largura do container */
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: white;
-  color: #333;
-  min-height: 45px; /* Ajusta a altura mínima */
-}
-
 .btn-dados {
   padding: 1rem 2rem;
   background-color: var(--light-lavender);
