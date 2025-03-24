@@ -200,3 +200,19 @@ input[type="time"] {
 #appointment-time:focus {
   border-color: var(--background-color);
 }
+
+.input-wrapper input,
+.input-wrapper select {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-personalizado {
+  font-size: 16px;
+  color: #333;
+}
