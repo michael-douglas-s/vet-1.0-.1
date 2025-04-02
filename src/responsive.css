@@ -22,7 +22,9 @@
     width: 13rem; /* Mantém a imagem do perfil com a largura adequada */
   }
   
- 
+  input, textarea, select {
+    font-size: 16px;
+  }
 
   .btn-dados {
     font-size: 1.6rem;
@@ -35,6 +37,7 @@
   .input-personalizado-date {
     font-size: 1.2rem; /* Ajusta o tamanho da fonte nos inputs */
   }
+  
 }
 
 /* Responsividade para telas pequenas (480px e acima) */
@@ -46,6 +49,7 @@
     font-size: 3rem;
     
   }
+  
   
 
   .perfil-vet .title-vet {

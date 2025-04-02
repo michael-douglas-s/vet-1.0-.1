@@ -249,3 +249,12 @@ input[type="time"] {
 #appointment-time:focus {
   border-color: var(--background-color);
 }
+input {
+  width: 100%;
+  max-width: 400px; /* Ajuste conforme necessário */
+}
+input,
+select {
+  font-size: 16px;
+  
+}
