@@ -140,9 +140,11 @@ body {
   color: rgb(100, 76, 122);
   cursor: pointer;
   margin-top: 1rem;
-  transition: 1s;
-  width: 100%;
+  transition: transform 0.3s ease;
+  width: 100%; /* Garante que o botão ocupe toda a largura */
   font-size: 2.3rem;
+  min-height: 4rem; /* Garante altura mínima do botão */
+  box-sizing: border-box;
 }
 
 .btn-dados:hover {
@@ -194,39 +196,4 @@ input[type="time"] {
   border-radius: 8px;
   border: 2px solid #ddd;
   transition: all 0.3s ease;
-}
-
-/* Estilo para quando o campo de horário estiver focado */
-#appointment-time:focus {
-  border-color: var(--background-color);
-}
-
-.input-personalizado {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  position: relative;
-  color: black;
-  background-color: white;
-}
-
-input[type="date"]::-webkit-datetime-edit {
-  color: transparent;
-}
-
-/* Criando o efeito de placeholder com o texto 'Data' */
-.input-personalizado::before {
-  content: "Data:";
-  color: var(   --dark-gray-blue);
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  pointer-events: none; /* Para que o texto não interfira na interação do input */
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.input-personalizado:focus::before {
-  content: ""; /* Remove o texto "Data" quando o input for focado */
 }

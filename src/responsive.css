@@ -25,3 +25,15 @@
     padding: 1.2rem;
   }
 }
+
+@media (max-width: 768px) { /* Para dispositivos com largura até 768px, como o iPhone */
+  .container-btn {
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between; /* Garantir que os botões não fiquem sobrepostos */
+  }
+
+  .contact-btn {
+    padding: 1rem 1.5rem; /* Ajusta o padding dos botões para telas menores */
+  }
+}
