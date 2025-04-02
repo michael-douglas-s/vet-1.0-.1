@@ -256,18 +256,12 @@ select:focus {
 }
 
 input, select {
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* Remove o estilo padrão do iOS */
   -moz-appearance: none;
   appearance: none;
-  border-radius: 8px; /* Ajuste conforme necessário */
-  border: 1px solid #ccc; /* Define uma borda visível */
-  padding: 10px;
-  font-size: 16px;
-  background-color: white;
-}
-
-input:focus, select:focus {
-  outline: none;
-  border-color: #9965FF; /* Cor ao focar no campo */
-  box-shadow: 0 0 5px rgba(153, 101, 255, 0.5);
+  border-radius: 8px; /* Mantém bordas arredondadas */
+  width: 100%; /* Garante que o campo ocupe toda a largura disponível */
+  padding: 12px;
+  font-size: 16px; /* Ajusta o tamanho da fonte */
+  box-sizing: border-box; /* Evita que padding e bordas aumentem o tamanho do elemento */
 }

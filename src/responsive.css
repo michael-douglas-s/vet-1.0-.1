@@ -29,3 +29,9 @@
         flex-direction: column; /* Garante alinhamento vertical em telas menores */
     }
 }
+
+@media (max-width: 768px) {
+  input, select {
+    font-size: 16px !important; /* Evita zoom automático do iPhone */
+  }
+}
