@@ -35,7 +35,7 @@
   .input-personalizado-animal,
   .option-service,
   .input-personalizado-date {
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte nos inputs */
+    font-size: 16px; /* Ajusta o tamanho da fonte nos inputs */
   }
   
 }
