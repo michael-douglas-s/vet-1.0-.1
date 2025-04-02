@@ -254,3 +254,20 @@ select:focus {
 #image-3 {
   background-image: url("./images/gabi2.jpg");
 }
+
+input, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 8px; /* Ajuste conforme necessário */
+  border: 1px solid #ccc; /* Define uma borda visível */
+  padding: 10px;
+  font-size: 16px;
+  background-color: white;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #9965FF; /* Cor ao focar no campo */
+  box-shadow: 0 0 5px rgba(153, 101, 255, 0.5);
+}
