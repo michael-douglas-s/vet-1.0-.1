@@ -1,0 +1,31 @@
+@media(max-width:500px){
+
+  .container{
+  
+  }
+  .container-btn{
+    flex-direction: column;
+  }
+  .container-vet {
+    border-radius:0 ;
+  }
+
+.label-name, .label-animal,.label-service,
+.label-date,.label-time{
+  display: none;
+  }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .dados-client {
+        padding: 1rem;
+    }
+
+    .inp {
+        flex-direction: column; /* Garante alinhamento vertical em telas menores */
+    }
+}

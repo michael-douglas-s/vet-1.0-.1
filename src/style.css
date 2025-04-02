@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
+  
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-color: transparent; /* Removido cor vermelha */
-    padding: 2rem;
+    margin: 0.1rem;
 }
 
 .container-vet {
@@ -88,8 +88,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
-  flex-direction: column;
-  width: 100%
+   width: 100%
 }
 
 .contact-btn {
@@ -133,10 +132,11 @@ body {
 }
 
 .title-dados {
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #333;
-    font-size: 2.3rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: rgba(255, 250, 250, 0.897);
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 
 #appointment-form {
@@ -197,6 +197,10 @@ input[type="time"] {
     font-size: 1.6rem;
 }
 
+.inp-date {
+  
+}
+
 input::placeholder {
     color: #aaa;
     font-style: italic;
@@ -216,19 +220,6 @@ select:focus {
 }
 
 /* Responsivo */
-@media (max-width: 600px) {
-    .container {
-        padding: 1rem;
-    }
-
-    .dados-client {
-        padding: 1rem;
-    }
-
-    .inp {
-        flex-direction: column; /* Garante alinhamento vertical em telas menores */
-    }
-}
 
 .profile-picture {
   position: relative;
