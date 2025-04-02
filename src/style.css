@@ -326,3 +326,9 @@ input[type="time"] {
     flex-wrap: wrap;
   }
 }
+
+/* Evitar zoom nos campos de input */
+input, select, textarea {
+  font-size: 16px; /* Definir um tamanho de fonte padrão */
+  -webkit-text-size-adjust: 100%; /* Impede o zoom automático em dispositivos móveis */
+}
