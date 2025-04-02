@@ -2,26 +2,39 @@
 
 html {
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.6rem;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-gray-blue);
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--pale-blue);
-  margin: 0;
+  align-items: center; /* Alinha o conteúdo ao topo */
+  flex-direction: column;
+  min-height: 100%; /* Deixa o body crescer conforme o conteúdo */
+  overflow-x: hidden; /* Impede o scroll horizontal */
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
 }
 
 .container-vet {
-  width: 95vw;
-  max-width: 65rem;
-  height: 100vh;
-  border-radius: 3rem;
-  margin: 2rem;
+  width: 100%;
+  border-radius: 2rem;
   background: var(--background-image);
+  padding-bottom: 1rem; /* Adiciona espaçamento no final */
+  min-height: 100%; /* Garante que o container cresça conforme o conteúdo */
 }
 
 .perfil-vet {
@@ -29,14 +42,15 @@ body {
   flex-direction: column;
   align-items: center;
   background: var(--background-image);
-  border-radius: 3rem 3rem 0 0;
   padding: 3rem;
+  width: 100%;
+  min-height: 420px; /* Define uma altura mínima */
 }
 
 .profile-picture {
   position: relative;
-  width: 17rem;
-  height: 17rem;
+  width: 13rem;
+  aspect-ratio: 1;
   border-radius: 50%;
   margin-top: 2rem;
   overflow: hidden; /* Esconde as imagens fora do contêiner */
@@ -51,37 +65,35 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0; /* Começa invisível */
-  transition: opacity 1s ease-in-out; /* Transição suave da opacidade */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-/* Imagens específicas */
 #image-1 {
-  background-image: url("./images/300x300.jpg"); /* Primeira imagem */
+  background-image: url("./images/300x300.jpg");
 }
 
 #image-2 {
-  background-image: url("./images/gabi1.jpg"); /* Segunda imagem */
+  background-image: url("./images/gabi1.jpg");
 }
 
 #image-3 {
-  background-image: url("./images/gabi2.jpg"); /* Terceira imagem */
+  background-image: url("./images/gabi2.jpg");
 }
 
 .perfil-vet .title-vet {
   margin-top: 1rem;
   color: rgba(255, 250, 250, 0.897);
-  font-size: 3.5rem;
+  font-size: 2.8rem;
 }
 
 .perfil-vet .name-vet {
   color: rgba(255, 250, 250, 0.897);
-  font-size: 2.3rem;
+  font-size: 1.9rem;
 }
 
 .container-btn {
   display: flex;
-
   gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -98,7 +110,7 @@ body {
   padding: 1rem 2rem;
   width: 100%;
   background-color: var(--light-lavender);
-  border-radius: 2rem;
+  border-radius: 1.3rem;
 }
 
 .container-localizacao {
@@ -106,17 +118,18 @@ body {
   width: 100%;
   text-align: center;
   background-color: var(--light-lavender);
-  border-radius: 2rem;
+  border-radius: 1.3rem;
   font-weight: 700;
 }
+
 .container-localizacao a {
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Faz o link ocupar toda a largura do contêiner */
-  padding: 1rem 2rem; /* Aumenta a área clicável */
-  text-decoration: none; /* Remove o sublinhado padrão */
+  width: 100%;
+  padding: 1rem 2rem;
+  text-decoration: none;
 }
 
 .dados-client {
@@ -125,7 +138,6 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border-radius: 0 0 3rem 3rem;
   padding: 2rem;
 }
 
@@ -142,10 +154,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  margin-top: 2.3rem;
+  margin-top: 2rem;
 }
 
-/*inputs camps  */
 .input-personalizado-tutor:hover,
 .input-personalizado-animal:hover,
 .option-service:hover,
@@ -171,6 +182,7 @@ body {
   transform: scale(1.1);
 }
 
+/* Inputs personalizados */
 input[type="date"],
 input[type="time"] {
   width: 100%; /* Para ocupar toda a largura disponível */
@@ -181,7 +193,7 @@ input[type="time"] {
   border: none;
 }
 
-/* Estilo geral do campo de horário */
+/* Estilo geral dos campos de input */
 .input-personalizado-tutor,
 .input-personalizado-animal,
 .input-personalizado-date,
@@ -193,9 +205,9 @@ input[type="time"] {
   padding: 12px 15px;
   width: 100%;
   box-sizing: border-box;
-
   transition: all 0.3s ease;
 }
+
 .option-service {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
@@ -207,25 +219,24 @@ input[type="time"] {
   transition: all 0.3s ease;
 }
 
-/* Quando o campo está em foco (clicado) */
+/* Foco nos campos de input */
 .input-personalizado-tutor:focus,
 .input-personalizado-animal:focus,
 .option-service:focus,
 .input-personalizado-date:focus,
-.input-personalizado-time {
+.input-personalizado-time:focus {
   border-color: #5c6bc0;
   outline: none;
   box-shadow: 0 0 10px rgba(92, 107, 192, 0.5);
 }
 
-/* Para o caso de placeholder */
+/* Placeholder dos inputs */
 .input-personalizado-tutor::placeholder,
 .input-personalizado-animal::placeholder {
   color: #aaa;
   font-style: italic;
 }
 
-/* Estilo para o input de horário */
 #appointment-time {
   color: #333;
   font-size: 16px;
@@ -236,7 +247,81 @@ input[type="time"] {
   transition: all 0.3s ease;
 }
 
-/* Estilo para quando o campo de horário estiver focado */
 #appointment-time:focus {
   border-color: var(--background-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .perfil-vet {
+    padding: 2rem;
+  }
+
+  .perfil-vet .title-vet {
+    font-size: 2.2rem;
+  }
+
+  .perfil-vet .name-vet {
+    font-size: 1.6rem;
+  }
+
+  .profile-picture {
+    width: 13rem;
+  }
+
+  .container-btn {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-dados {
+    font-size: 1.8rem;
+  }
+  .container-vet{
+    border-radius: 0rem;
+  }
+
+  .input-personalizado-tutor,
+  .input-personalizado-animal,
+  .option-service,
+  .input-personalizado-date {
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 400px) {
+  .perfil-vet .title-vet {
+    font-size: 3rem;
+  }
+
+  .perfil-vet .name-vet {
+    font-size: 2rem;
+  }
+
+  .container-btn {
+    gap: 0.5rem;
+  }
+
+  .profile-picture {
+    width: 13rem;
+  }
+
+  .btn-dados {
+    font-size: 1.6rem;
+  }
+
+  .input-personalizado-tutor,
+  .input-personalizado-animal,
+  .option-service,
+  .input-personalizado-date {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .container-btn {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
 }

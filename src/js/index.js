@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     // Troca de imagens a cada 3 segundos (3000 milissegundos)
-    setInterval(switchImages, 4000);
+    setInterval(switchImages, 2000);
   
     // Inicializa a primeira imagem como visível
     image1.style.opacity = 1;
