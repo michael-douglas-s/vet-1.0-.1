@@ -186,3 +186,13 @@ input[type="time"] {
   color: #aaa;
   font-style: italic;
 }
+
+/* Estilo para o input de horário */
+#appointment-time {
+  color: #333;cç
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+}
