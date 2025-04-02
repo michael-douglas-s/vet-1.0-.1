@@ -9,15 +9,12 @@ html {
 body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.6rem;
-  margin: 0;
-  padding: 0;
   background-color: var(--dark-gray-blue);
   display: flex;
   justify-content: center;
   align-items: center; /* Alinha o conteúdo ao topo */
   flex-direction: column;
-  min-height: 100%; /* Deixa o body crescer conforme o conteúdo */
-  overflow-x: hidden; /* Impede o scroll horizontal */
+  height: 100vh;
 }
 
 .container {
@@ -26,25 +23,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  
+  height: 100%;
+ 
 }
 
 .container-vet {
   width: 100%;
-  border-radius: 2rem;
   background: var(--background-image);
-  padding-bottom: 1rem; /* Adiciona espaçamento no final */
-  min-height: 100%; /* Garante que o container cresça conforme o conteúdo */
+  height: 100%;
+ 
 }
 
 .perfil-vet {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--background-image);
-  padding: 3rem;
+  background: var( --background-image);
+  padding: 2rem;
   width: 100%;
-  min-height: 420px; /* Define uma altura mínima */
+  min-height: 380px; /* Define uma altura mínima */
 }
 
 .profile-picture {
@@ -132,13 +129,15 @@ body {
   text-decoration: none;
 }
 
+/* dados cliente */
 .dados-client {
-  background: var(--background-image);
+  background:var( --background-image);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 3rem;
+  min-height: 450px;
 }
 
 .title-dados {
@@ -206,7 +205,6 @@ input[type="time"] {
   width: 100%;
   box-sizing: border-box;
   transition: all 0.3s ease;
-  -webkit-text-size-adjust: 100%; /* Impede zoom no foco */
 }
 
 .option-service {
@@ -250,85 +248,4 @@ input[type="time"] {
 
 #appointment-time:focus {
   border-color: var(--background-color);
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .perfil-vet {
-    padding: 2rem;
-  }
-
-  .perfil-vet .title-vet {
-    font-size: 2.2rem;
-  }
-
-  .perfil-vet .name-vet {
-    font-size: 1.6rem;
-  }
-
-  .profile-picture {
-    width: 13rem;
-  }
-
-  .container-btn {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .btn-dados {
-    font-size: 1.8rem;
-  }
-  .container-vet{
-    border-radius: 0rem;
-  }
-
-  .input-personalizado-tutor,
-  .input-personalizado-animal,
-  .option-service,
-  .input-personalizado-date {
-    font-size: 1.4rem;
-  }
-}
-
-/* Responsividade para telas menores que 480px */
-@media (max-width: 400px) {
-  .perfil-vet .title-vet {
-    font-size: 3rem;
-  }
-
-  .perfil-vet .name-vet {
-    font-size: 2rem;
-  }
-
-  .container-btn {
-    gap: 0.5rem;
-  }
-
-  .profile-picture {
-    width: 13rem;
-  }
-
-  .btn-dados {
-    font-size: 1.6rem;
-  }
-
-  .input-personalizado-tutor,
-  .input-personalizado-animal,
-  .option-service,
-  .input-personalizado-date {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 340px) {
-  .container-btn {
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-}
-
-/* Evitar zoom nos campos de input */
-input, select, textarea {
-  font-size: 16px; /* Definir um tamanho de fonte padrão */
-  -webkit-text-size-adjust: 100%; /* Impede o zoom automático em dispositivos móveis */
 }
