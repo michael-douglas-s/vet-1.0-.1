@@ -189,10 +189,26 @@ input[type="time"] {
 
 /* Estilo para o input de horário */
 #appointment-time {
-  color: #333;cç
+  color: #333;
+  font-size: 16px;
   font-family: Arial, sans-serif;
   background-color: #fff;
   border-radius: 8px;
   border: 2px solid #ddd;
   transition: all 0.3s ease;
 }
+
+/* Estilo para quando o campo de horário estiver focado */
+#appointment-time:focus {
+  border-color: var(--background-color);
+}
+
+.input-personalizado {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  color: black;
+  background-color: white;
+}
+
