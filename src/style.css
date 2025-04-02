@@ -1,48 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
-    font-size: 62.5%;
-   
+  font-size: 62.5%;
 }
 
-
-
 body {
-    font-family: "Hanken Grotesk", sans-serif;
-    font-size: 1.6rem;
-    background-color: #f0f0f0; /* Cor de fundo padrão */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.6rem;
+  background-color: #f0f0f0; /* Cor de fundo padrão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: transparent; /* Removido cor vermelha */
-    margin: 0.1rem;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: transparent; /* Removido cor vermelha */
+  margin: 0.1rem;
 }
 
 .container-vet {
-    width: 100%;
-    background-color: #e0e0e0; /* Cor de fundo padrão */
-    border-radius: 1rem;
-    overflow: hidden;
+  width: 100%;
+  background-color: #e0e0e0; /* Cor de fundo padrão */
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .perfil-vet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var( --background-image);
-    padding: 2rem;
-    width: 100%;
-    min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-image);
+  padding: 2rem;
+  width: 100%;
+  min-height: 380px;
 }
 
 .perfil-vet .title-vet {
@@ -57,30 +53,28 @@ body {
 }
 
 .profile-picture {
-    position: relative;
-    width: 13rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    margin-top: 2rem;
-    overflow: hidden;
+  position: relative;
+  width: 13rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-top: 2rem;
+  overflow: hidden;
 }
 
 .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .image:nth-child(1) {
-    opacity: 1;
+  opacity: 1;
 }
-
-
 
 .container-btn {
   display: flex;
@@ -88,7 +82,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
-   width: 100%
+  width: 100%;
 }
 
 .contact-btn {
@@ -122,13 +116,13 @@ body {
 }
 /* dados client */
 .dados-client {
-   background: var(--background-image);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 2rem;
-    min-height: auto; /* Removido altura mínima fixa */
+  background: var(--background-image);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  min-height: auto; /* Removido altura mínima fixa */
 }
 
 .title-dados {
@@ -140,16 +134,16 @@ body {
 }
 
 #appointment-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-top: 2rem;
 }
 
 label {
-    color: #333;
-    font-weight: 600;
+  color: #333;
+  font-weight: 600;
 }
 
 .input-personalizado-tutor,
@@ -157,69 +151,75 @@ label {
 .input-personalizado-date,
 .input-personalizado-time,
 .option-service {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1.6rem;
-    width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  width: 100%;
 }
 
 .btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-dados {
-    padding: 1rem 2rem;
-    background-color: #b39ddb;
-    border: none;
-    border-radius: 2rem;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 2rem;
-    width: 100%; /* Largura total */
-    max-width: 250px; /* Largura máxima */
+  padding: 1rem 2rem;
+  background-color: #b39ddb;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  width: 100%; /* Largura total */
+  max-width: 250px; /* Largura máxima */
 }
 
 .btn-dados:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 input[type="date"],
 input[type="time"] {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1.6rem;
-}
-
-.inp-date {
-  
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.6rem;
 }
 
 input::placeholder {
-    color: #aaa;
-    font-style: italic;
+  color: #aaa;
+  font-style: italic;
 }
 
 input:focus,
 select:focus {
-    border-color: #5c6bc0;
-    outline: none;
-    box-shadow: 0 0 10px rgba(92, 107, 192, 0.5);
+  border-color: #5c6bc0;
+  outline: none;
+  box-shadow: 0 0 10px rgba(92, 107, 192, 0.5);
 }
 
 .inp {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column; /* Alinha verticalmente em telas menores */
+  display: flex;
+  gap: 1rem;
+  flex-direction: column; /* Alinha verticalmente em telas menores */
 }
 
-/* Responsivo */
+.inp-date {
+  position: relative;
+}
+
+.inp-date .fa-calendar-alt {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-90%, 30%);
+  font-size: 2rem;
+}
 
 .profile-picture {
   position: relative;
@@ -255,7 +255,8 @@ select:focus {
   background-image: url("./images/gabi2.jpg");
 }
 
-input, select {
+input,
+select {
   -webkit-appearance: none; /* Remove o estilo padrão do iOS */
   -moz-appearance: none;
   appearance: none;
