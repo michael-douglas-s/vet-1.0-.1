@@ -105,6 +105,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para preencher as opções no início
     atualizarHorariosDisponiveis();
   });
+  
+  // deixar ficar a data
+
+  document.addEventListener("DOMContentLoaded", function() {
+    let today = new Date(); 
+    let year = today.getFullYear(); // Ano atual
+    let month = String(today.getMonth() + 1).padStart(2, '0'); // Mês atual (ajustado para 2 dígitos)
+    let day = String(today.getDate()).padStart(2, '0'); // Dia atual (ajustado para 2 dígitos)
+
+    let formattedDate = `${year}-${month}-${day}`; // Formato YYYY-MM-DD
+    document.getElementById("appointment-date").value = formattedDate;
+});
 
   // Animações com o avatar
 
