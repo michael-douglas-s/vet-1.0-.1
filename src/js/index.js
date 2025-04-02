@@ -105,3 +105,39 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para preencher as opções no início
     atualizarHorariosDisponiveis();
   });
+
+  // Animações com o avatar
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const image1 = document.getElementById("image-1");
+    const image2 = document.getElementById("image-2");
+    const image3 = document.getElementById("image-3");
+  
+    let currentImage = 1; // Controla qual imagem está visível
+  
+    function switchImages() {
+      if (currentImage === 1) {
+        // Mostrar a imagem 2 e esconder a imagem 1
+        image1.style.opacity = 0;
+        image2.style.opacity = 1;
+        currentImage = 2;
+      } else if (currentImage === 2) {
+        // Mostrar a imagem 3 e esconder a imagem 2
+        image2.style.opacity = 0;
+        image3.style.opacity = 1;
+        currentImage = 3;
+      } else {
+        // Mostrar a imagem 1 e esconder a imagem 3
+        image3.style.opacity = 0;
+        image1.style.opacity = 1;
+        currentImage = 1;
+      }
+    }
+  
+    // Troca de imagens a cada 3 segundos (3000 milissegundos)
+    setInterval(switchImages, 4000);
+  
+    // Inicializa a primeira imagem como visível
+    image1.style.opacity = 1;
+  });
+  

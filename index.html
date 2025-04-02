@@ -22,7 +22,13 @@
         <div class="perfil-vet">
           <h1 class="title-vet">Gabriela Mara</h1>
           <p class="name-vet">Médica veterinária</p>
-          <div class="profile-picture"></div>
+          <div class="profile-picture">
+            <div class="images-wrapper">
+              <div class="image image-1" id="image-1"></div>
+              <div class="image image-2" id="image-2"></div>
+              <div class="image image-2" id="image-3"></div>
+            </div>
+          </div>
 
           <div class="container-btn">
             <a class="contact-btn" href="https://web.whatsapp.com/">
@@ -55,21 +61,21 @@
           <h2 class="title-dados">Confirme seus Dados</h2>
           <form id="appointment-form">
             <input
-              class="input-personalizado"
+              class="input-personalizado-tutor"
               type="text"
               placeholder="Nome do Tutor"
               id="tutor-name"
               required
             />
             <input
-              class="input-personalizado"
+              class="input-personalizado-animal"
               type="text"
               placeholder="Nome do Animal"
               id="animal-name"
               required
             />
 
-            <select class="input-personalizado" id="service-type" required>
+            <select class="option-service" id="service-type" required>
               <option value="">Selecione um serviço</option>
               <option value="consulta">Consulta</option>
               <option value="Consulta Dermatológica">
@@ -82,15 +88,15 @@
             </select>
 
             <input
-             
-              class="input-personalizado"
+              placeholder="data"
+              class="input-personalizado-date"
               type="date"
               id="appointment-date"
               required
             />
             <select
               placeholder="time"
-              class="input-personalizado"
+              class="input-personalizado-time"
               id="appointment-time"
               required
             >
