@@ -11,22 +11,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-gray-blue);
-}
-
-.container {
-  width: 100vw;
-  max-width: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--pale-blue);
+  margin: 0;
 }
 
 .container-vet {
-  width: 100%;
-  border-radius: 2rem;
-  background: var(--background-image);
+  width: 95vw;
+  max-width: 65rem;
   height: 100vh;
+  border-radius: 3rem;
+  margin: 2rem;
+  background: var(--background-image);
 }
 
 .perfil-vet {
@@ -34,15 +29,14 @@ body {
   flex-direction: column;
   align-items: center;
   background: var(--background-image);
+  border-radius: 3rem 3rem 0 0;
   padding: 3rem;
-  width: 100%;
-  height: 420px;
 }
 
 .profile-picture {
   position: relative;
-  width: 13rem;
-  aspect-ratio: 1;
+  width: 17rem;
+  height: 17rem;
   border-radius: 50%;
   margin-top: 2rem;
   overflow: hidden; /* Esconde as imagens fora do contêiner */
@@ -77,16 +71,17 @@ body {
 .perfil-vet .title-vet {
   margin-top: 1rem;
   color: rgba(255, 250, 250, 0.897);
-  font-size: 2.8rem;
+  font-size: 3.5rem;
 }
 
 .perfil-vet .name-vet {
   color: rgba(255, 250, 250, 0.897);
-  font-size: 1.9rem;
+  font-size: 2.3rem;
 }
 
 .container-btn {
   display: flex;
+
   gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -103,7 +98,7 @@ body {
   padding: 1rem 2rem;
   width: 100%;
   background-color: var(--light-lavender);
-  border-radius: 1.3rem;
+  border-radius: 2rem;
 }
 
 .container-localizacao {
@@ -111,7 +106,7 @@ body {
   width: 100%;
   text-align: center;
   background-color: var(--light-lavender);
-  border-radius: 1.3rem;
+  border-radius: 2rem;
   font-weight: 700;
 }
 .container-localizacao a {
@@ -130,7 +125,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-
+  border-radius: 0 0 3rem 3rem;
   padding: 2rem;
 }
 
@@ -244,15 +239,4 @@ input[type="time"] {
 /* Estilo para quando o campo de horário estiver focado */
 #appointment-time:focus {
   border-color: var(--background-color);
-}
-
-@media (max-width: 340px) {
-  .container-btn {
-    flex-wrap: wrap;
-  }
-
-  .profile-picture {
-    width: 100px;
-    aspect-ratio: 1;
-  }
 }
