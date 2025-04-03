@@ -7,7 +7,7 @@ html {
 body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.6rem;
-  background-color: #f0f0f0; /* Cor de fundo padrão */
+  background-color: var(--dark-gray-blue);
   display: flex;
   justify-content: center;
   align-items: center;

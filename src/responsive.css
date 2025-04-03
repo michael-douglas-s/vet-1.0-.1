@@ -1,5 +1,6 @@
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .container {
+    max-width: 100%;
   }
   .container-btn {
     flex-direction: column;
@@ -14,9 +15,6 @@
   .label-date,
   .label-time {
     display: none;
-  }
-  .container {
-    max-width: 100%;
   }
 
   .dados-client {
