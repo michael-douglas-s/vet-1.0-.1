@@ -36,3 +36,35 @@
     font-size: 16px !important; /* Evita zoom automático do iPhone */
   }
 }
+
+@media (min-width: 700px) {
+  .dados-client {
+    height: 520px;
+    padding: 0 2rem;
+  }
+
+  .title-dados {
+    margin-top: 1rem;
+  }
+
+  #appointment-form {
+    margin: 1rem;
+    gap: 0.8rem;
+  }
+
+  .btn-dados {
+    padding: 0.7rem;
+    font-size: 1.8rem;
+  }
+  .btn {
+    margin-top: 0.5rem;
+  }
+
+  .label-name,
+  .label-animal,
+  .label-service,
+  .label-date,
+  .label-time {
+    font-size: 1.6rem;
+  }
+}
